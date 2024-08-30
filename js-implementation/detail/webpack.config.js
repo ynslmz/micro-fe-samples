@@ -1,14 +1,19 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { entry } = require("../list/webpack.config");
 const { ModuleFederationPlugin } = require("webpack").container;
+
 module.exports = {
+  entry: "./src/index.js",
   mode: "development",
-  devServer: { port: 4000 },
+  devServer: {
+    port: 4100,
+  },
   plugins: [
     new ModuleFederationPlugin({
-      name: "container",
-      remotes: {
-        list: "list@http://localhost:4200/list.js",
-        detail: "detail@http://localhost:4100/detail.js",
+      name: "detail",
+      filename: "detail.js",
+      exposes: {
+        "./detailIndex": "./src/index",
       },
     }),
     new HtmlWebpackPlugin({
