@@ -1,4 +1,4 @@
-let appName = "App1";
+let appName = "List Application is running";
 console.log(appName);
 
-document.getElementById("list").innerHTML = appName;
+document.getElementById("dev-list").innerHTML = appName;

@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
   entry: "./src/index.js",
@@ -7,6 +8,13 @@ module.exports = {
     port: 4200,
   },
   plugins: [
+    new ModuleFederationPlugin({
+      name: "list",
+      filename: "list.js",
+      exposes: {
+        "./listIndex": "./src/index",
+      },
+    }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
