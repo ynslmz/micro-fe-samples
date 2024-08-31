@@ -1,0 +1,19 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "title": "Mouse",
+      "detail": "Mouse details mouse details mouse details "
+    },
+    {
+      "id": 2,
+      "title": "Monitor",
+      "detail": "Monitor details Monitor details Monitor details "
+    },
+    {
+      "id": 3,
+      "title": "Keyboard",
+      "detail": "keyboard details keyboard details keyboard details "
+    }
+  ]
+}
