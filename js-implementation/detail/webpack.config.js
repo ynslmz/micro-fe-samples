@@ -15,6 +15,7 @@ module.exports = {
       exposes: {
         "./detailIndex": "./src/index",
       },
+      shared: ["lodash"],
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",

@@ -1,10 +1,11 @@
 console.log("Detail page is running");
 import data from "../../db/data.json";
+import _ from "lodash";
 
 let detailText = "";
 const id = Number(getParameter("item_id"));
 if (id) {
-  detailText += `<p>${data.list.find((i) => i.id == id).detail}<p>`;
+  detailText += `<p>${_.find(data.list, { id }).detail}<p>`;
 
   document.getElementById("dev-detail").innerHTML = detailText;
 }
