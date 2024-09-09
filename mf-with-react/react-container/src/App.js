@@ -6,13 +6,15 @@ export default () => {
     border: "1px solid #1f778d",
     backgroudColor: "#f3fdff",
     borderRadius: "10px",
-    padding: "50px",
+    padding: "20px",
     color: "#1F778D",
+    margin: "20px",
   };
 
   return (
     <div style={card}>
       Container : React
+      <hr />
       <VueChild />
       <ReactChild />
     </div>
