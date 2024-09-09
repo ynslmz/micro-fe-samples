@@ -7,5 +7,6 @@
   background-color: #ff000020;
   padding: 50px;
   border-radius: 10px;
+  margin-top: 50px;
 }
 </style>
