@@ -30,6 +30,7 @@ module.exports = {
       name: "container",
       remotes: {
         childVue: "childVue@http://localhost:8081/remoteEntry.js",
+        childReact: "childReact@http://localhost:8082/remoteEntry.js",
       },
     }),
   ],

@@ -1,5 +1,6 @@
 import React from "react";
 import VueChild from "./components/VueChild";
+import ReactChild from "./components/ReactChild";
 export default () => {
   const card = {
     border: "1px solid #1f778d",
@@ -13,6 +14,7 @@ export default () => {
     <div style={card}>
       Container : React
       <VueChild />
+      <ReactChild />
     </div>
   );
 };
